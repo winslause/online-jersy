@@ -2,14 +2,6 @@
 
 Jersey Royale is a fully responsive ecommerce website, built using HTML, CSS, and JavaScript.
 
-## Home Page
-
-![home page](https://user-images.githubusercontent.com/75976169/193442392-76cea148-631a-4d45-9cf3-2db27c32c1b0.png)
-
-## Products Page
-
-![products](https://user-images.githubusercontent.com/75976169/193442491-dad14370-96f8-4ac8-b781-60e9954c01f7.png)
-
 ## Run Locally
 
 To run **Jersey Royale** locally, run this command on your git bash:
