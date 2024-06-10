@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Products | Jersey Royale</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/f390425e8d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" type="image/x-icon" href="images/logo-white.png" />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="path-to-fontawesome/font-awesome.css"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/logo.png" width="125px" />
+          </a>
+        </div>
+        <div class="search_bar">
+          <input
+            type="text"
+            name="search"
+            placeholder="Search for products, brands and more"
+          />
+          <button type="submit" class="search-button">
+            <img src="images\icons8-search-24.png" />
+          </button>
+        </div>
+        <nav>
+          <ul id="MenuItems">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="allproducts.html">Products</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="account.html">Account</a></li>
+          </ul>
+        </nav>
+        <a href="cart.html">
+          <img
+            class="cart-image"
+            src="images/cart.png"
+            width="30px"
+            height="30px"
+          />
+        </a>
+        <div class="toggle">
+          <i class="fa-solid fa-moon toggle-icon"></i>
+          <i class="fa-solid fa-sun toggle-icon"></i>
+          <div class="toggle-ball"></div>
+        </div>
+        <img src="images/menu.png" class="menu-icon" onclick="menutoggle()" />
+      </div>
+    </div>
+
+    <div class="small-container">
+      <div class="row row-2" data-aos="fade-up">
+        <h2>Our Products</h2>
+        <select>
+          <option>Default Sorting</option>
+          <option>Sort By Price</option>
+          <option>Sort By Popularity</option>
+          <option>Sort By Rating</option>
+          <option>Sort By Sales</option>
+        </select>
+      </div>
+      <div class="row">
+        <div class="col-4" id="box" data-aos="fade-up">
+          <a href="productdetail.html">
+            <img
+              src="https://resources.premierleague.com/photos/2023/10/16/e02e41b0-e64e-4fab-a498-3a8c1418ff74/CHE_2324_HK_PL_S1.png?width=235&height=310"
+            />
+          </a>
+          <a href="productdetail.html">
+            <h4>Chelsea Home Kit</h4>
+          </a>
+          <div class="rating">
+            <!-- for adding star cdn link-> font awesome 4cdn by stackpath -->
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>Ksh. 1500</p>
+        </div>
+        <div class="col-4" id="box" data-aos="fade-up">
+          <img
+            src="https://resources.premierleague.com/photos/2023/08/21/f5b9457f-459b-4468-a34f-88864e7d1273/BOU_2324_HK_PL_S1.png?width=235&height=310"
+          />
+          <h4>Bournemouth Home Kit</h4>
+          <div class="rating">
+            <!-- for adding star cdn link-> font awesome 4cdn by stackpath -->
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>Ksh. 1500</p>
+        </div>
+        <div class="col-4" id="box" data-aos="fade-up">
+          <img
+            src="https://resources.premierleague.com/photos/2023/08/21/c4fdd6c3-9e3f-4573-8cfc-699fba77d4d4/BOU_2324_TK_PL_S1.png?width=235&height=310"
+          />
+          <h4>Bournemouth Third Kit</h4>
+          <div class="rating">
+            <!-- for adding star cdn link-> font awesome 4cdn by stackpath -->
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>Ksh. 1500</p>
+        </div>
+        <div class="col-4" id="box" data-aos="fade-up">
+          <img
+            src="https://resources.premierleague.com/photos/2023/08/20/b10fdb30-f163-4fb4-a05d-3c8d405e976d/BRE_2324_HK_PL_S1.png?width=235&height=310"
+          />
+          <h4>Brentford Home Kit</h4>
+          <div class="rating">
+            <!-- for adding star cdn link-> font awesome 4cdn by stackpath -->
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>Ksh. 1500</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4" id="box" data-aos="fade-up">
+          <img
+            src="https://resources.premierleague.com/photos/2023/08/20/56bc838d-6197-46ea-8169-2e34039b1330/BRE_2324_TK_PL_S1.png?width=235&height=310"
+          />
+          <h4>Brentford 3rd Kit</h4>
+          <div class="rating">
+            <!-- for adding star cdn link-> font awesome 4cdn by stackpath -->
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>Ksh. 1500</p>
+        </div>
+        <div class="col-4" id="box" data-aos="fade-up">
+          <img
+            src="https://resources.premierleague.com/photos/2023/10/16/26512063-5b5e-4080-a56a-a7d73f03a23c/CHE_2324_AK_PL_S1.png?width=235&height=310"
+          />
+          <h4>Chelsea Away Kit</h4>
+          <div class="rating">
+            <!-- for adding star cdn link-> font awesome 4cdn by stackpath -->
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>Ksh. 1500</p>
+        </div>
+        <div class="col-4" id="box" data-aos="fade-up">
+          <img
+            src="https://resources.premierleague.com/photos/2023/08/20/83875bf5-9ef7-4fc4-b011-99a893d60f8d/CRY_2324_HK_PL_S1.png?width=235&height=310"
+          />
+          <h4>Crystal Palace Home Kit</h4>
+          <div class="rating">
+            <!-- for adding star cdn link-> font awesome 4cdn by stackpath -->
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>Ksh. 1500</p>
+        </div>
+        <div class="col-4" id="box" data-aos="fade-up">
+          <img
+            src="https://resources.premierleague.com/photos/2023/08/20/97d1515c-2f49-4dc9-887e-e7f38e96850e/CRY_2324_TK_PL_S1.png?width=235&height=310"
+          />
+          <h4>Crystal Palace 3rd Kit</h4>
+          <div class="rating">
+            <!-- for adding star cdn link-> font awesome 4cdn by stackpath -->
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>Ksh. 1500</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4" id="box" data-aos="fade-up">
+          <img
+            src="https://resources.premierleague.com/photos/2023/08/20/4bd336bd-9719-40d7-b4bd-3b767c63809c/LIV_2324_HK_PL_S1.png?width=235&height=310"
+          />
+          <h4>Liverpool Home Kit</h4>
+          <div class="rating">
+            <!-- for adding star cdn link-> font awesome 4cdn by stackpath -->
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>Ksh. 1500</p>
+        </div>
+        <div class="col-4" id="box" data-aos="fade-up">
+          <img
+            src="https://resources.premierleague.com/photos/2023/08/20/205fc2bd-3bb9-4239-8e49-b87647cb9e0b/MCI_2324_HK_PL_S1.png?width=235&height=310"
+          />
+          <h4>Man City Home Kit</h4>
+          <div class="rating">
+            <!-- for adding star cdn link-> font awesome 4cdn by stackpath -->
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>Ksh. 1500</p>
+        </div>
+        <div class="col-4" id="box" data-aos="fade-up">
+          <img
+            src="https://resources.premierleague.com/photos/2023/08/20/663ea6d6-3fe9-4852-a0d0-0818fff4a454/MCI_2324_TK_PL_S1.png?width=235&height=310"
+          />
+          <h4>Man City 3rd Kit</h4>
+          <div class="rating">
+            <!-- for adding star cdn link-> font awesome 4cdn by stackpath -->
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>Ksh. 1500</p>
+        </div>
+        <div class="col-4" id="box" data-aos="fade-up">
+          <img
+            src="https://resources.premierleague.com/photos/2023/08/20/ec93272d-9e11-457c-830a-4cb9afcd6c35/NEW_2324_HK_PL_S1.png?width=235&height=310"
+          />
+          <h4>New Castle Home Kit</h4>
+          <div class="rating">
+            <!-- for adding star cdn link-> font awesome 4cdn by stackpath -->
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>Ksh. 1500</p>
+        </div>
+      </div>
+      <div class="page-btn">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>&#8594;</span>
+      </div>
+    </div>
+    <!------footer--------->
+    <div class="footer">
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>Download Our App</h3>
+            <p>Download App for Android and ios mobile phone</p>
+            <div class="app-logo">
+              <img src="images/play-store.png" class="footer-img" />
+              <img src="images/app-store.png" class="footer-img" />
+            </div>
+          </div>
+          <div class="footer-col-2">
+            <img src="images/logo-white.png" />
+            <p>
+              Our Purpose is to Sustainably make the Pleasure and Benefits of
+              Sports Accessible to the many
+            </p>
+          </div>
+          <div class="footer-col-3">
+            <h3>Useful Links</h3>
+            <ul>
+              <li>Coupons</li>
+              <li>Blog Post</li>
+              <li>Return Policy</li>
+              <li>Join Affiliate</li>
+            </ul>
+          </div>
+          <div class="footer-col-4" data-aos="fade-up">
+            <h3>Follow Us</h3>
+            <div class="socialbtns" align="center">
+              <ul>
+                <li><a href="#" class="fa fa-lg fa-facebook"></a> Facebook</li>
+                <br />
+                <li><a href="#" class="fa fa-lg fa-twitter"></a> Twitter</li>
+                <br />
+                <li>
+                  <a href="#" class="fa fa-lg fa-instagram"></a> Instagram
+                </li>
+                <br />
+                <li><a href="#" class="fa fa-lg fa-youtube"></a> Youtube</li>
+                <br />
+              </ul>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <p class="copyright">
+          Copyright &copy
+          <script type="text/javascript">
+            document.write(new Date().getFullYear());
+          </script>
+          - JerseyRoyale
+        </p>
+      </div>
+    </div>
+    <script>
+      var MenuItems = document.getElementById("MenuItems");
+      MenuItems.style.maxHeight = "0px";
+
+      function menutoggle() {
+        if (MenuItems.style.maxHeight == "0px") {
+          MenuItems.style.maxHeight = "200px";
+        } else {
+          MenuItems.style.maxHeight = "0px";
+        }
+      }
+      const ball = document.querySelector(".toggle-ball");
+      const items = document.querySelectorAll(
+        ".row,body,.menu-icon,.container,.navbar,.header,.toggle"
+      );
+      const cartImage = document.querySelector(".cart-image");
+      ball.addEventListener("click", () => {
+        items.forEach((item) => {
+          item.classList.toggle("active");
+        });
+        ball.classList.toggle("active");
+        MenuItems.classList.toggle("active");
+        cartImage.classList.toggle("bgm-change");
+      });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
